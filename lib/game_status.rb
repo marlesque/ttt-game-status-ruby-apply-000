@@ -64,7 +64,7 @@ def over?(board)
     return FALSE
   end
   
-  if won?(board) && !(full?(board))
+  if (won?(board)!=nil) && !(full?(board))
     return TRUE
   end
   
