@@ -60,7 +60,7 @@ end
 
 def over?(board)
   inprogress = board.any?{|i| i == "" || i == " "}
-  if inprogress
+  if inprogress && (won?(board)==nil)
     return FALSE
   end
   
